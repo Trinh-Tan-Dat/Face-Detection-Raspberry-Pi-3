@@ -13,7 +13,7 @@ def create_directory(directory):
 def collect_data(person_name, interval=0.5):
     person_dir = os.path.join(dataset_dir, person_name)
     create_directory(person_dir)
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     count = count_files(person_dir)
     start_time = time.time()
     try:
